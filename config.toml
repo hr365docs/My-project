@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://github.com/hr365docs/My-project.git"
+baseURL = "https://github.com/hr365docs/My-project/"
 # theme
 theme = "dot-hugo"
 # site title
