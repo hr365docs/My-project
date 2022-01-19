@@ -1,31 +1,31 @@
 <!doctype html><html lang=en-us>
 <head>
 <meta charset=utf-8>
-<title>Configuration</title>
+<title>Installation</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=generator content="Hugo 0.92.0">
-<meta name=description content="Configuration - Dot ">
-<link rel=stylesheet href="../../../plugins/bootstrap/bootstrap.min.css">
-<link rel=stylesheet href="../../../plugins/themify-icons/themify-icons.css">
+<meta name=description content="Installation - Dot ">
+<link rel=stylesheet href="../../../static/plugins/bootstrap/bootstrap.min.css">
+<link rel=stylesheet href="../../../static/plugins/themify-icons/themify-icons.css">
 <link rel=icon href=https://github.com/hr365docs/My-project.git/images/favicon.png type=image/x-icon>
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel=stylesheet>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js></script>
 <style>:root{--primary-color:#02007e;--body-color:#f9f9f9;--text-color:#636363;--text-color-dark:#242738;--white-color:#ffffff;--light-color:#f8f9fa;--font-family:Lato}</style>
-<link href="../../../css/style.min.css" rel=stylesheet media=screen>
-<script src=https://github.com/hr365docs/My-project.git/plugins/jquery/jquery-1.12.4.js></script>
+<link href="../css/style.min.css" rel=stylesheet media=screen>
+<script src="..static/plugins/jquery/jquery-1.12.4.js"></script>
 <script src=https://github.com/hr365docs/My-project.git/plugins/jquery/jquery-ui.js></script>
 <script src=https://github.com/hr365docs/My-project.git/plugins/bootstrap/bootstrap.min.js></script>
-<script src=https://github.com/hr365docs/My-project.git/plugins/match-height/jquery.matchHeight-min.js></script>
-<meta name=twitter:title content="Configuration">
-<meta name=twitter:description content="This is meta description">
-<meta property="og:title" content="Configuration">
-<meta property="og:description" content="This is meta description">
+<script src="../../../static/plugins/match-height/jquery.matchHeight-min.js"></script>
+<meta name=twitter:title content="Installation">
+<meta name=twitter:description content="Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet">
+<meta property="og:title" content="Installation">
+<meta property="og:description" content="Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://github.com/hr365docs/My-project.git/installation/configuration/">
+<meta property="og:url" content="https://github.com/hr365docs/My-project.git/installation/">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Configuration">
-<meta name=twitter:description content="This is meta description">
+<meta name=twitter:title content="Installation">
+<meta name=twitter:description content="Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet">
 </head>
 <body>
 <header class="shadow-bottom sticky-top bg-white">
@@ -59,8 +59,8 @@ docs
 </div>
 </li>
 </ul>
-<select class="lang-list dark mb-3 mb-md-0" id=select-language onchange="location=this.value"><option id=en value=https://github.com/hr365docs/My-project.git/installation/configuration/ selected>En
-</option><option id=fr value=https://github.com/hr365docs/My-project.git/fr/installation/configuration/>Fr</option></select>
+<select class="lang-list dark mb-3 mb-md-0" id=select-language onchange="location=this.value"><option id=en value=https://github.com/hr365docs/My-project.git/installation/ selected>En
+</option><option id=fr value=https://github.com/hr365docs/My-project.git/fr/installation/>Fr</option></select>
 </div>
 </div>
 </nav>
@@ -72,7 +72,8 @@ docs
 <div class=sidebar>
 <a class=back-btn href=/hr365docs/My-project.git aria-label=back></a>
 <ul class=list-styled>
-<li data-nav-id=https://github.com/hr365docs/My-project.git/installation/ title=Installation class=sidelist>
+<li data-nav-id=https://github.com/hr365docs/My-project.git/installation/ title=Installation class="sidelist
+active">
 <a href=https://github.com/hr365docs/My-project.git/installation/>
 Installation
 </a>
@@ -87,8 +88,7 @@ Requirments
 Installation
 </a>
 </li>
-<li data-nav-id=https://github.com/hr365docs/My-project.git/installation/configuration/ title=Configuration class="sidelist
-active">
+<li data-nav-id=https://github.com/hr365docs/My-project.git/installation/configuration/ title=Configuration class=sidelist>
 <a href=https://github.com/hr365docs/My-project.git/installation/configuration/>
 Configuration
 </a>
@@ -110,24 +110,48 @@ Elements
 </div>
 <div class=col-lg-9>
 <div class="p-lg-5 p-4 bg-white" id=content>
-<h2 class=mb-5 id=title>Configuration</h2>
-<div class=content><h3 id=global-site-parameters>Global site parameters</h3>
-<p>On top of <a href=https://gohugo.io/overview/configuration/>Hugo global configuration</a>, <strong>Dot</strong> lets you define the following parameters in your <code>config.toml</code> (here, values are default).</p>
-<p>Note that some of these parameters are explained in details in other sections of this documentation.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml>[<span style=color:#a6e22e>params</span>]
-  <span style=color:#75715e># Prefix URL to edit current page. </span>
-  <span style=color:#75715e># Useful to give opportunity to people to create merge request for your doc.</span>
-  <span style=color:#75715e># See the config.toml file from this documentation site to have an example.</span>
-  <span style=color:#75715e># Javascript and CSS cache are automatically busted when new version of site is generated. </span>
-  <span style=color:#75715e># Order sections in menu by &#34;weight&#34;</span>
-  <span style=color:#75715e># Call to action is default enabled, if you want to disable it. just change the </span>
-  <span style=color:#a6e22e>enable</span> = <span style=color:#66d9ef>false</span>
-  <span style=color:#75715e># You can change banner title and other text from the config file.</span>
-</code></pre></div></div>
-<p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 05 Jan 2020</p>
+<h2 class=mb-5 id=title>Installation</h2>
+<div class="bg-light p-4">
+<ul class=page-list>
+<li data-nav-id=https://github.com/hr365docs/My-project.git/installation/ title=Installation class="sidelist
+active">
+<a href=https://github.com/hr365docs/My-project.git/installation/>
+Installation
+</a>
+<ul>
+<li data-nav-id="./installation/requirments/" title=Requirments class=sidelist>
+<a href="./installation/requirments/">
+Requirments
+</a>
+</li>
+<li data-nav-id="./installation/install/" title=Installation class=sidelist>
+<a href="./installation/install/">
+Installation
+</a>
+</li>
+<li data-nav-id="./installation/configuration/" title=Configuration class=sidelist>
+<a href="./installation/configuration/">
+Configuration
+</a>
+</li>
+<li data-nav-id="./installation/customization/ title=Customization class=sidelist">
+<a href="./installation/customization/">
+Customization
+</a>
+</li>
+<li data-nav-id="./installation/elements/ title=Elements class=sidelist">
+<a href="./installation/elements/">
+Elements
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 29 Dec 2018</p>
 <nav class="pagination mt-3">
-<a class="nav nav-prev" href=https://github.com/hr365docs/My-project.git/installation/install/ aria-label="Previous page"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Installation</span></a>
-<a class="nav nav-next" href=https://github.com/hr365docs/My-project.git/installation/customization/ aria-label="Previous page"> <span class="d-none d-md-block">Customization</span><i class="ti-arrow-right ml-2"></i></a>
+<a class="nav nav-prev" href=https://github.com/hr365docs/My-project.git/ aria-label="Previous page"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block"></span></a>
+<a class="nav nav-next" href=https://github.com/hr365docs/My-project.git/installation/requirments/ aria-label="Previous page"> <span class="d-none d-md-block">Requirments</span><i class="ti-arrow-right ml-2"></i></a>
 </nav>
 </div>
 </div>
@@ -151,6 +175,6 @@ Elements
 </div>
 </div>
 </footer>
-<script src=https://github.com/hr365docs/My-project.git/js/script.min.js></script>
+<script src="./js/script.min.js"></script>
 </body>
 </html>
