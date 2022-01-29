@@ -66,6 +66,11 @@
 </div>
 </nav>
 </header>
+<Section>
+    <div class="breadcrumb">
+        <div class="item"><a href="#home">Home/ </a></div>
+    </div>
+</Section>
 <section class="single section-sm pb-0">
 <div class=container>
 <div class=row>
@@ -78,7 +83,7 @@ active">
 <a href="../../../Employee-Directory/">
 User Guide
 </a>
-<ul>
+<ul class="items"> 
 <li data-nav-id=https://github.com/hr365docs/My-project.git/installation/requirments/ title=Requirments class=sidelist>
 <a href="../User-Guide/intro/">
 Introduction
@@ -116,7 +121,7 @@ Advanced Modules
 <div class="p-lg-5 p-4 bg-white" id=content>
 <h2 class=mb-5 id=title>Table of content</h2>
 <div class="bg-light p-4">
-<ul class=page-list>
+<ul class="items page-list">
     <li data-nav-id=https://github.com/hr365docs/My-project.git/ title=Table of content class="sidelist
 active">
 <a href="../../../Employee-Directory/">
@@ -127,7 +132,7 @@ User Guide
 <a href="../User-Guide/intro/">
 Introduction
 </a>
-<ul class="sidenavSub-topics">
+<ul class="ml-15 sidenavSub-topics">
     <li>    
         <a href="./Getting-Started/">Getting started</a>
     </li>
@@ -182,5 +187,18 @@ Advanced Modules
 </div>
 </footer>
 <script src="../../../js/script.min.js"></script>
+<script>
+    $('.items a').on('click', function() {
+  var $this = $(this),
+      $bc = $('<div class="item"></div>');
+
+  $this.parents('li').each(function(n, li) {
+      var $a = $(li).children('a').clone();
+      $bc.prepend(' / ', $a);
+  });
+    $('.breadcrumb').html( $bc.prepend('<a href="#home">Home</a>') );
+    return false;
+}) 
+</script>
 </body>
 </html>
