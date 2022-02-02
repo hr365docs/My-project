@@ -81,15 +81,16 @@
   </a>
   <ul>
   <li data-nav-id=https://github.com/hr365docs/My-project.git/installation/requirments/ title=Requirments class=sidelist>
-  <a href="../Admin-Guide/User/">
-  Users
+  <a href="../../User/">
+  Home Page
   </a>
 </li>
-<li data-nav-id="./Setting/" title=Installation class=sidelist>
-<a href="../Setting/">
-Settings
-</a>
-<ul class="sidenavSub-topics">
+
+  <li data-nav-id="../Setting/" title=Installation class=sidelist>
+    <a href="../../Setting/">
+    Settings
+    </a>
+    <ul class="sidenavSub-topics">
   
   </li><ul>
       <li data-nav-id="../General" title=Customization class=sidelist>
@@ -135,31 +136,36 @@ Settings
 
 
 <h5>Configure SharePoint API permissions:</h5>
-<ol>
-  <li>SharePoint admin can configure API permissions. </li>
-  <li>This configuration helps in excluding block sign-in users, excluding hidden users in GAL, excluding shared mailbox users of O365, syncing mobile numbers from azure AD.</li>
-</ol>
-<p>How to configure SharePoint API permission?</p>
-<p>Click on click here link in settings, redirect to SharePoint admin centre access API page. There you will find 3 Microsoft graph under organization- wide select and click on approve one by one for all 3 Microsoft graph</p>
-
+<ul class="ul_styles"><li>SharePoint admin can configure API permissions.</li></ul>
+<ul class="ul_styles"><li>This configuration helps in excluding block sign-in users, excluding hidden users in GAL, excluding shared mailbox users of O365, syncing mobile numbers from azure AD.</li></ul>
+<br>
+<p><b>How to configure SharePoint API permission?</b></p>
+<ol><li>Click on <img src="click.png" alt=""width="100" height="60"> link in settings, which redirect to SharePoint admin centre access API page.</li></ol>
+<ol><li>There you will find 3 Microsoft graph under organization- wide select and click on approve one by one for all 3 Microsoft graph</li></ol>
+<br>
 <img src="Picture7.png" alt="">
-  <p> Sync unlicensed users: Technically users who does not contain work email Id in SharePoint profile is considered as unlicensed user, you can sync those users by enabling toggle switch. </p>
-
-  <h5>Sync unlicensed users </h5>
-  <ol><li>Here we have 3 option to sync the images namely SPO, outlook and ED.	
-    </li>
-  <li>In case if you select outlook or ED options, if image is not available for outlook or ED, image from SharePoint user profile if exist.</li>
-<li>ED: Change the source of profile images, you can use custom images by placing images in image library. Click on click here, redirect to image library upload the images. Format of image is -username@domain.com.jpg</li></ol>
-<p>Sync and display mobile number from azure: This works on API; it sync’s mobile numbers from azure. If mobile number is not available in azure, it displays mobile number if exist in SharePoint user profile.</p>
-<p>User presence This works on API, it shows MS teams status on profiles in home page</p>
-<p>Auto load instead load more button: If you enable this, users load automatically as you scroll down vertically in home page, no need to click on load more button to load the users in home page.</p>
-<p>Hide side navigation panel in SharePoint page: If you enable this, side navigation panel of SharePoint page will hide</p>
+<br>
+<br>
+<ul class="ul_styles"><li><b>Sync unlicensed users:</b> Technically users who does not contain work email Id in SharePoint profile is considered as unlicensed user, you can sync those users by enabling toggle switch. </li></ul>
+<br>
+  
+<b>Sync unlicensed users</b>
+<ul class="ul_styles"><li>Here we have 3 option to sync the images namely SPO, outlook and ED. </li></ul>
+<ul class="ul_styles"><li>In case if you select outlook or ED options, if image is not available for outlook or ED, image from SharePoint user profile if exist.</li></ul>
+<ul class="ul_styles"><li>ED: Change the source of profile images, you can use custom images by placing images in image library. Click on click here, redirect to image library upload the images. Format of image is -username@domain.com.jpg</li></ul>
+<br>
+<p> <b>Sync and display mobile number from azure:</b> This works on API; it sync’s mobile numbers from azure. If mobile number is not available in azure, it displays mobile number if exist in SharePoint user profile.</p>
+<p> <b>User presence:</b> This works on API, it shows MS teams status on profiles in home page</p>
+<p><b>Auto load instead load more button:</b> If you enable this, users load automatically as you scroll down vertically in home page, no need to click on load more button to load the users in home page.</p>
+<p><b>Hide side navigation panel in SharePoint page:</b> If you enable this, side navigation panel of SharePoint page will hide</p>
 <img src="Picture8.png" alt="">
+<br>
+<br>
 <img src="Picture9.png" alt="">
-<p>Show extended fields in list view: If this is enabled, the right-side hidden column in lists view will displays, you can check it by scrolling horizontal to right side.</p>
-<p>Records to load: Load number of profiles on refresh or first-time page load, you can select 25 or 50 or 100. Higher numbers come with additional page load time, please select wisely.</p>
-<p>Custom fields: You can add custom fields and sync details from AD, Azure AD and  SPO location. </p>
-<p>Birthday animation: On birthday of user, birthday notification will send to the users. This works on Power Automate setup. Here we can change the mail format from template which notified to users on their birthday</p>
+<p> <b>Show extended fields in list view:</b> If this is enabled, the right-side hidden column in lists view will displays, you can check it by scrolling horizontal to right side.</p>
+<p> <b>Records to load:</b> Load number of profiles on refresh or first-time page load, you can select 25 or 50 or 100. Higher numbers come with additional page load time, please select wisely.</p>
+<p> <b>Custom fields:</b> You can add custom fields and sync details from AD, Azure AD and  SPO location. </p>
+<p> <b>Birthday animation:</b> On birthday of user, birthday notification will send to the users. This works on Power Automate setup. Here we can change the mail format from template which notified to users on their birthday</p>
 </ul>
 </div>
 <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 22 Jan 2022</p>

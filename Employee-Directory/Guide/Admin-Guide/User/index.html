@@ -26,6 +26,57 @@
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Installation">
 <meta name=twitter:description content="Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet">
+<Style>
+    
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 15%;
+  width: 75%;
+  height: 80%;
+  margin: 0px auto;
+  overflow: auto;
+  background-color: #ddd;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #f4f4f4;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+
+.close {
+  color: #000;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+</Style>
 </head>
 <body>
 <header class="shadow-bottom sticky-top bg-white">
@@ -98,19 +149,19 @@ Settings
               </a>
               </li>
               <li data-nav-id="../Exclude-Options/" title=Elements class=sidelist>
-                  <a href="../Admin-Guide/Setting/Exclude-Options/">
+                  <a href="../Setting/Exclude-Options/">
                   Exclude Options
                   </a>
               </li>
               
               <li data-nav-id="../views/" title=Elements class=sidelist>
-                  <a href="../Admin-Guide/Setting/views/">
+                  <a href="../Setting/views/">
                   Views
                   </a>
               </li>
               
               <li data-nav-id="../advanced/" title=Elements class=sidelist>
-              <a href="../Admin-Guide/Setting/Advanced/">
+              <a href="../Setting/Advanced/">
               Advanced
               </a>
     </li>
@@ -129,55 +180,46 @@ Settings
 </div>
 <div class=col-lg-9>
 <div class="p-lg-5 p-4 bg-white" id=content>
-<h2 class=mb-5 id=title>Users</h2>
+<h2 class=mb-5 id=title>Home Page</h2>
 <div class="bg-light p-4">
 <ul class=page-list>
-    <a href="../../../Employee-Directory/">
-        Admin-Guide
-        </a>
-        <ul>
-        <li data-nav-id=https://github.com/hr365docs/My-project.git/installation/requirments/ title=Requirments class=sidelist>
-        <a href="../Admin-Guide/User/">
-        Users
-        </a>
-        </li>
-        <li data-nav-id="./Setting/" title=Installation class=sidelist>
-        <a href="./Setting/">
-        Settings
-        </a>
-        <ul class="sidenavSub-topics">
-            
-            </li><ul>
-                <li data-nav-id="../General" title=Customization class=sidelist>
-                    <a href="../Admin-Guide/Setting/General/">
-                      General
-                      </a>
-                      </li>
-                      <li data-nav-id="../Exclude-Options/" title=Elements class=sidelist>
-                          <a href="../Admin-Guide/Setting/Exclude-Options/">
-                          Exclude Options
-                          </a>
-                      </li>
-                      
-                      <li data-nav-id="../views/" title=Elements class=sidelist>
-                          <a href="../Admin-Guide/Setting/views/">
-                          Views
-                          </a>
-                      </li>
-                      
-                      <li data-nav-id="../advanced/" title=Elements class=sidelist>
-                      <a href="../Admin-Guide/Setting/Advanced/">
-                      Advanced
-                      </a>
-            </li>
-            
-        </ul>
-        </ul>
-        <li data-nav-id=https://github.com/hr365docs/My-project.git/installation/configuration/ title=Configuration class=sidelist>
-            <a href="../Admin-Guide/System/">
-            System
-            </a>
-            </li>
+<h3>Overview</h3>
+The home page is the first page that is displayed to you post-authentication. 
+<br>
+<br>
+<div><img src="home-page.png" onclick="openModal('home-page.png')" alt=""width="100%" height="auto"></div>
+<br>
+<br>
+The home page has various elements:
+<ul class="ul_styles"><li><b>Users Alphabetical Filter:</b>You can search different fileds. </li></ul>
+
+<ul class="ul_styles"><li><b>Download:</b> You can download the details in excel. </li></ul>
+<ul class="ul_styles"><li><b>Settings:</b> You can edit the fields. </li></ul>
+<ul class="ul_styles"><li><b>Help:</b> You can contact and support. </li></ul>
+<ul class="ul_styles"><li><b>Filters:</b> You can refresh the page. </li></ul>
+<ul class="ul_styles"><li><b>Grid View:</b>You can view.  </li></ul>
+<ul class="ul_styles"><li><b>List View:</b> You can view in list. </li></ul>
+<ul class="ul_styles"><li><b>Tile View:</b> You can view the profile in tile. </li></ul>
+<ul class="ul_styles"><li><b>Org chart:</b> You can view organization chart.</li></ul>
+
+
+
+<!-- <div class="notices note"><div class="paragraph">
+    <p>You must have Administrator access to add new user accounts and
+    edit access settings. Regular users have access to their own user account details.</p>
+    </div>
+    </div> -->
+
+    <!-- <div class="paragraph"> -->
+
+        <!-- <div class="notices info"><div class="paragraph"> -->
+        <!-- <p>Only <strong>Active</strong> accounts can be used to log in to <strong>SuiteCRM</strong>. -->
+        <!-- In addition, <strong>Inactive</strong> account usernames are not included in dropdown username -->
+        <!-- lists (e.g. assigned to or modified by lists) used for record searching.</p> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        
+        </div>
 </ul>
 </div>
 <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 29 Dec 2018</p>
@@ -190,6 +232,17 @@ Settings
 </div>
 </div>
 </section>
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">     
+        <img src="" id="imageId" style="width:100%">
+      </div>
+  
+      </div>
+  </div>
+  
 <footer class="section pb-4">
 <div class=container>
 <div class="row align-items-center">
@@ -208,5 +261,32 @@ Settings
 </div>
 </footer>
 <script src="../../../../js/script.min.js"></script>
+<Script>
+    function openModal(src) {
+alert(src);
+  document.getElementById("imageId").src= src;
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");  
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</Script>
 </body>
 </html>
