@@ -47,3 +47,4 @@ color: rgba(0,0,0,.9); width: 17%;}ul.ul_styles {margin-left: 4%;list-style-type
 .cursor {
   cursor: pointer;
 }
+ol li {padding-left: 20px;}
