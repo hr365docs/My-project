@@ -4,7 +4,7 @@ color: rgba(0,0,0,.9); width: 17%;}ul.ul_styles {margin-left: 4%;list-style-type
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 50px;
+  padding-top: 28px;
   left: 0;
   top: 15%;
   width: 75%;
@@ -17,9 +17,9 @@ color: rgba(0,0,0,.9); width: 17%;}ul.ul_styles {margin-left: 4%;list-style-type
 .modal-content {
   position: relative;
   background-color: #f4f4f4;
-  margin: auto;
+  margin: 0px auto;
   padding: 0;
-  width: 80%;
+  width: 92%;
   max-width: 1200px;
 }
 
