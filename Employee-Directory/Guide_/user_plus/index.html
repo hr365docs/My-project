@@ -66,21 +66,26 @@
 </div>
 </nav>
 </header>
+<Section>
+    <div class="breadcrumb">
+        <div class="item"><a href="#home">Home/ </a></div>
+    </div>
+</Section>
 <section class="single section-sm pb-0">
 <div class=container>
 <div class=row>
 <div class=col-lg-3>
 <div class=sidebar>
-<a class=back-btn href="../../../Employee-Directory/"aria-label=back></a>
+<a class=back-btn href="../../../Employee-Directory/" aria-label=back></a>
 <ul class=list-styled>
-<li data-nav-id=https://github.com/hr365docs/My-project.git/Table of content/ title=Table of content class="sidelist
+<li data-nav-id="../../../Employee-Directory/"Table of content/ title=Table of content class="sidelist
 active">
 <a href="../../../Employee-Directory/">
 User Guide
 </a>
-<ul>
-<li data-nav-id="http://127.0.0.1:5500/Employee-Directory/user_plus/intro/"title=Requirments class=sidelist>
-<a href="./intro/">
+<ul class="items"> 
+<li data-nav-id=https://github.com/hr365docs/My-project.git/installation/requirments/ title=Requirments class=sidelist>
+<a href="../User-Guide/intro/">
 Introduction
 </a>
 <ul class="ml-15 sidenavSub-topics">
@@ -88,24 +93,32 @@ Introduction
         <a href="./Getting-Started/">Getting started</a>
     </li>
     <li>    
-        <a href="./Managing-User-Accounts/">Managing User Profile</a>
+        <a href="./Managing-User-Accounts/">Managing User Accounts</a>
     </li>
     <li>
         <a href="./User-Interface/">User interface</a>
+        <ul class="ml-15 sidenavSub-topics">
+            <li>    
+                <a href="./User-Interface/navigation/">Navigation</a>
+            </li>
+            <li>    
+                <a href="./User-Interface/home_page/">Home Page</a>
+            </li>
+            <li>
+                <a href="./User-Interface/search/">Search</a>
+                
+            </li>
+            <li>
+                <a href="./User-Interface/views/">Views</a>
+                
+            </li>
         
+        </ul>
     </li>
 
 </ul>
 </li>
-<li data-nav-id=https://github.com/hr365docs/My-project.git/installation/install/ title=Installation class=sidelist>
-<a href="../User-Guide/core/">
-Core Modules
-</a>
-</li>
-<li data-nav-id=https://github.com/hr365docs/My-project.git/installation/configuration/ title=Configuration class=sidelist>
-<a href="../User-Guide/Advanced/">
-Advanced Modules
-</a>
+
 </li>
 </ul>
 </li>
@@ -116,7 +129,7 @@ Advanced Modules
 <div class="p-lg-5 p-4 bg-white" id=content>
 <h2 class=mb-5 id=title>Table of content</h2>
 <div class="bg-light p-4">
-<ul class=page-list>
+<ul class="items page-list">
     <li data-nav-id=https://github.com/hr365docs/My-project.git/ title=Table of content class="sidelist
 active">
 <a href="../../../Employee-Directory/">
@@ -124,7 +137,7 @@ User Guide
 </a>
 <ul>
 <li data-nav-id=https://github.com/hr365docs/My-project.git/installation/requirments/ title=Requirments class=sidelist>
-<a href="./intro/">
+<a href="../User-Guide/intro/">
 Introduction
 </a>
 <ul class="ml-15 sidenavSub-topics">
@@ -132,25 +145,33 @@ Introduction
         <a href="./Getting-Started/">Getting started</a>
     </li>
     <li>    
-        <a href="./Managing-User-Accounts/">Managing User Profile</a>
+        <a href="./Managing-User-Accounts/">Managing User Accounts</a>
     </li>
     <li>
         <a href="./User-Interface/">User interface</a>
+        <ul class="ml-15 sidenavSub-topics">
+            <li>    
+                <a href="./User-Interface/navigation/">Navigation</a>
+            </li>
+            <li>    
+                <a href="./User-Interface/home_page/">Home Page</a>
+            </li>
+            <li>
+                <a href="./User-Interface/search/">Search</a>
+                
+            </li>
+            <li>
+                <a href="./User-Interface/views/">Views</a>
+                
+            </li>
+        
+        </ul>
         
     </li>
 
 </ul>
 </li>
-<li data-nav-id=https://github.com/hr365docs/My-project.git/installation/install/ title=Installation class=sidelist>
-<a href="../User-Guide/core/">
-Core Modules
-</a>
-</li>
-<li data-nav-id=https://github.com/hr365docs/My-project.git/installation/configuration/ title=Configuration class=sidelist>
-<a href="../User-Guide/Advanced/">
-Advanced Modules
-</a>
-</li>
+
 
 </ul>
 </li>
@@ -182,5 +203,18 @@ Advanced Modules
 </div>
 </footer>
 <script src="../../../js/script.min.js"></script>
+<!-- <script> -->
+    <!-- $('.items a').on('click', function() { -->
+  <!-- var $this = $(this), -->
+      <!-- $bc = $('<div class="item"></div>'); -->
+
+  <!-- $this.parents('li').each(function(n, li) { -->
+      <!-- var $a = $(li).children('a').clone(); -->
+      <!-- $bc.prepend(' / ', $a); -->
+  <!-- }); -->
+    <!-- $('.breadcrumb').html( $bc.prepend('<a href="#home">Home</a>') ); -->
+    <!-- return false; -->
+<!-- })  -->
+</script>
 </body>
 </html>
