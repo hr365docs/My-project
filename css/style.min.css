@@ -49,3 +49,7 @@ color: rgba(0,0,0,.9); width: 17%;}ul.ul_styles {margin-left: 4%;list-style-type
 }
 ol li {padding-left: 20px;}
 ul.ul_styles li {padding-left: 20px;}
+
+ul.ul_li_styles {   
+  list-style-type: initial;
+}
