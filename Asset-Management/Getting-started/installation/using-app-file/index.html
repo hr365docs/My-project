@@ -31,8 +31,8 @@
     <header class="shadow-bottom sticky-top bg-white">
         <nav class="navbar navbar-expand-md navbar-light">
         <div class="container px-2 px-md-0">
-        <a class="navbar-brand px-2" href=/hr365/My-project.git>
-            <img src='1.png' width="100%" height="auto" alt="HR365"/>
+        <a class="navbar-brand px-2" href="https://hr365docs.github.io/My-project/">
+            <img src='logo.png' width="100%" height="auto" alt="HR365"/>
 
         </a>
         <button class="navbar-toggler border-0" type=button data-toggle=collapse data-target=#navigation aria-controls=navigation aria-expanded=false aria-label="Toggle navigation">
@@ -41,26 +41,26 @@
         <div class="collapse navbar-collapse text-center" id=navigation>
             <ul class="navbar-nav ml-auto">
                 <li class=nav-item>
-                <a class="nav-link text-dark" href="https://hr365docs.github.io/My-project/">Home</a>
-                </li>
-                <li class=nav-item>
-                <a class="nav-link text-dark" href=https://hr365docs/My-project/faq>EDP</a>
-                </li>
-                <li class=nav-item>
-                    <a class="nav-link text-dark" href=https://hr365docs/My-project/faq>AMP</a>
-                 </li>
-                 <li class=nav-item>
-                    <a class="nav-link text-dark" href=https://hr365docs/My-project/faq>HDP</a>
-                </li>
-                <li class=nav-item>
-                    <a class="nav-link text-dark" href=https://hr365docs/My-project/faq>TMP</a>
-                </li>
-                <li class=nav-item>
-                    <a class="nav-link text-dark" href=https://hr365docs/My-project/faq>TSP</a>
-                </li>
-                <li class=nav-item>
-                <a class="nav-link text-dark" href=https://hr365docs/My-project/contact>OBP</a>
-                </li>
+                    <a class="nav-link text-dark" href="https://hr365docs.github.io/My-project/">Home</a>
+                    </li>
+                    <li class=nav-item>
+                    <a class="nav-link text-dark" href="./Employee-Directory/">Employee Directory</a>
+                    </li>
+                    <li class=nav-item>
+                        <a class="nav-link text-dark" href=https://hr365docs/My-project/faq>Asset Management</a>
+                     </li>
+                     <li class=nav-item>
+                        <a class="nav-link text-dark" href=https://hr365docs/My-project/faq>H365-Helpdesk</a>
+                    </li>
+                    <li class=nav-item>
+                        <a class="nav-link text-dark" href=https://hr365docs/My-project/faq>Time Off Manager</a>
+                    </li>
+                    <li class=nav-item>
+                        <a class="nav-link text-dark" href=https://hr365docs/My-project/faq>Timesheet</a>
+                    </li>
+                    <li class=nav-item>
+                    <a class="nav-link text-dark" href=https://hr365docs/My-project/contact>Employee On-boarding</a>
+                    </li>
                 </ul>
         
         </div>
@@ -73,31 +73,38 @@
     <div class=row>
     <div class=col-lg-3>
     <div class=sidebar>
-    <a class=back-btn href=/hr365docs/My-project.git aria-label=back></a>
+    <a class=back-btn href="../../installation/" aria-label=back></a>
     
     <ul class=list-styled>
-    <li data-nav-id=https://github.com/hr365docs/My-project.git/installation/ title=Installation class="sidelist
-    active">
+    <li data-nav-id=https://github.com/hr365docs/My-project.git/installation/ title=Installation class="sidelist">
     <a href="../../installation/">
     Installation
     </a>
     <ul>
-    <li data-nav-id=../../../Getting-started/installation/using-app-file/app-file.html  title=using-app-file class=sidelist>
-    <a href="../../installation/using-app-file/">
-        Installation of application from App Catalog
+    <li data-nav-id=../../../Getting-started/installation/using-app-file/app-file.html  title=using-app-file class="sidelist active">
+    <a href="../using-app-file/">
+       Installation of applications from app catalog
     </a>
-    </li>
-    <!-- <li data-nav-id=../../../Getting-started/installation/uploading/upload.html title=Requirments class=sidelist>
-        <a href="../../installation/uploading/">
-            Application using App catalog
-        </a>
+    <!-- <ul class="sidenavSub-topics">
+        <li>
+            <a href="../uploading/"> Installation of application from app catalog</a>
+            
         </li> -->
+    <!-- </ul>
+    </li> -->
+    <!-- <li data-nav-id=../../../Getting-started/installation/uploading/upload.html title=Requirments class=sidelist> -->
+        <!-- <a href="../../installation/uploading/"> -->
+            <!-- Installation of app file  -->
+        <!-- </a> -->
+        <!-- </li> -->
 
-        <li data-nav-id=../../../Getting-started/installation/using-app-file/install.html  title=install class=sidelist>
-            <a href="../../../Getting-started/installation/install/">
-                Installation of application from SharePoint Store
+        <li data-nav-id=../../../Getting-started/installation/using-app-file/install.html  title=install class="sidelist" >
+            <a href="../install/">
+                Installation of applications from SharePoint Store
             </a>
             </li>
+            
+            
     </ul>
     </li>
     </ul>
@@ -106,60 +113,104 @@
 
     <div class=col-lg-9>
         <div class="p-lg-5 p-4 bg-white" id=content>
-        <h2 class=mb-5 id=title>Installation of application from App Catalog</h2>
+        <h2 class=mb-5 id=title>Installation of applications from app catalog</h2>
         <div class="bg-light p-4">
+            <div class="notices note"><div class="paragraph">
+                <p>Only SharePoint Administrator can install the appliications. Administrator can make a member an admin. </p>
+                </div>
             <ol>
                 <li>
-                    Go to <a href="https://your tenant name-admin.sharepoint.com">https://your tenant name-admin.sharepoint.com</a>  and login with admin credential, you will enter into page as shown in below then click on <b>Admin</b>.
-                    <br>
-               
-                    <br>
-                    <img src="P1.png" alt="" width="100%">
+                  Go to <b>https://your tenant name-admin.sharepoint.com/_layouts/15/online/TenantAdminApps.aspx.</b>
+                  <br>
+                   <br>
+            
+                </li>
+                 <li>This displays the <b>Apps</b> page.</li>
+                 <br>
+                 <li>Click on <b>App Catalog</b> as shown in below.</li>
+                <br>
+                   
+                    <div><img src="App.png" onclick="openModal('App.png')" alt=""width="100%" height="auto"></div>
                 </li>
                <br>
+               <li>Click on <b>App for SharePoint</b> as shown in below.</li>
+                <br>
+                   <div><img src="share.png" onclick="openModal('share.png')" alt=""width="100%" height="auto"></div>
+                </li>
+                <br>
+                <li>This displays the <b>Apps for SharePoint</b> page.</li>
+                <br>
+                <li> Click on upload, choose your file and upload the file.</li>
+                <br>
+                <div><img src="upload.png" onclick="openModal('upload.png')" alt=""width="100%" height="auto"></div>
+                <br>
+                <div><img src="file.png" onclick="openModal('file.png')" alt=""width="100%" height="auto"></div>
+                <br>
+                <h3>Installation of App file </h3>
+                <br>
+                
+                <li>
+                    First open your site collection where you need to install your app, click on site content and then click on Settings gear icon.
+                   <br>
+                  <br>
+                   <div><img src="site.png" onclick="openModal('site.png')" alt=""width="100%" height="auto"></div>
+                  
+               </li> 
+               <br>
+               <li>You can either click on Add an app or App under New.</li>
+               <br>
+               <div><img src="add_app.png" onclick="openModal('add_app.png')" alt=""width="100%" height="auto"></div>
+               <br>
+               <br>
+               <li>This displays the <b> SharePoint apps</b> page.</li>
+                   <br>
                
-                <br>
-                <li>Click on <b>Show all</b> </li>
-                <br>
-                <img src="P2.png" alt="" width="100%">
-                <li>Click on <b>SharePoint</b>  </li>
-                <br>
-                <img src="P3.png" alt="" width="100%">
-                <br>
-                <br>
-                <li>Click on <b>More features </b> </li>
-                <br>
-                <img src="P4.png" alt="" width="100%">
-                <br>
-                <br>
-                <li>Click on <b>open button</b>  of Apps as shown in below</li>
-                <br>
-                <img src="P5.png" alt="" width="100%">
-                <br>
-                <br>
-                <li>Click on <b>App Catalog</b>  as shown in below.</li>
-                <br>
-                <img src="P6.png" alt="" width="100%">
-                <br>
-                <br>
-                <li>You will navigate to below page as shown in below, click on <b>Apps for SharePoint</b>  from left side panel</li>
-                <br>
-                <img src="P7.png" alt="" width="100%">
-            </ol>
+               <div><img src="sharepoint.png" onclick="openModal('sharepoint.png')" alt=""width="100%" height="auto"></div>
+               <br>
+               <br>
+
+               <li>You will navigate to the page where ADD is visible as shown in below, click on it.</li>
+               <br>
+              
+               <div><img src="share_add.png" onclick="openModal('share_add.png')" alt=""width="100%" height="auto"></div>
+               <br>
+
+               <li>And finally click on Trust it, application starts installing.</li>
+               <br>
+               
+               <div><img src="trust.png" onclick="openModal('trust.png')" alt=""width="100%" height="auto"></div>
+               <br>
+               <li>Once application got installed you can check in Site contents.</li>
+               <br>
+               
+               <div><img src="EMP download.png" onclick="openModal('EMP download.png')" alt=""width="100%" height="auto"></div>
+               <br>
+               
+            
             </div>
             <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 22 Jan 2022</p>
             <nav class="pagination mt-3">
                 <a class="nav nav-prev" href="../../installation/" aria-label="Previous page"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block"></span></a>
-                <a class="nav nav-next" href="../../installation/uploading/" aria-label="Previous page"> <span class="d-none d-md-block">Uploading App file into app catalog </span><i class="ti-arrow-right ml-2"></i></a>
+                <a class="nav nav-next" href="../../installation/install/" aria-label="Previous page"> <span class="d-none d-md-block">Installation of application from SharPoint store </span><i class="ti-arrow-right ml-2"></i></a>
                 </nav>
             </div>
             </div>
         </section>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">     
+                <img src="" id="imageId" style="width:100%">
+              </div>
+          
+              </div>
+          </div>
         <footer class="section pb-4">
         <div class=container>
         <div class="row align-items-center">
         <div class="col-md-8 text-md-left text-center">
-        <p class="mb-md-0 mb-4">Copyright © 2022</a></p>
+        <p class="mb-md-0 mb-4">© 2022- <a href="https://www.hr365.us/">HR365</a>.&nbsp;<a href="https://2020.hr365.us/wp-content/uploads/2020/01/HR365-SLA.pdf">SLA</a>.&nbsp;<a href="https://www.hr365.us/terms-and-conditions/">T&amp;C</a>.&nbsp; <a href="https://www.hr365.us/end-user-license-agreement-eula/">EULA</a>.&nbsp;<a href="https://www.hr365.us/privacy/">Privacy Policy</a>.&nbsp;  <a href="https://www.cubiclogics.com" target="_blank" rel="noopener noreferrer">Cubic Logics</a>.&nbsp;</a></p>
         </div>
         <div class="col-md-4 text-md-right text-center">
           <ul class=list-inline>

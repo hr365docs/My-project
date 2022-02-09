@@ -23,23 +23,35 @@
 <nav class="navbar navbar-expand-md navbar-light">
 <div class="container px-2 px-md-0">
 <a class="navbar-brand px-2" href=/hr365/My-project.git>
-HR365
+    <img src='logo.png' width="100%" height="auto" alt="HR365"/>
+
 </a>
 <button class="navbar-toggler border-0" type=button data-toggle=collapse data-target=#navigation aria-controls=navigation aria-expanded=false aria-label="Toggle navigation">
 <span class=navbar-toggler-icon></span>
 </button>
 <div class="collapse navbar-collapse text-center" id=navigation>
 <ul class="navbar-nav ml-auto">
-<li class=nav-item>
-<a class="nav-link text-dark" href="https://hr365docs.github.io/My-project/">Home</a>
-</li>
-<li class=nav-item>
-<a class="nav-link text-dark" href=https://github.com/hr365docs/My-project.git/faq>Faq</a>
-</li>
-<li class=nav-item>
-<a class="nav-link text-dark" href=https://github.com/hr365docs/My-project.git/contact>contact</a>
-</li>
-<li class="nav-item dropdown">
+    <li class=nav-item>
+        <a class="nav-link text-dark" href="https://hr365docs.github.io/My-project/">Home</a>
+        </li>
+        <li class=nav-item>
+        <a class="nav-link text-dark" href="./Employee-Directory/">Employee Directory</a>
+        </li>
+        <li class=nav-item>
+            <a class="nav-link text-dark" href=https://hr365docs/My-project/faq>Asset Management</a>
+         </li>
+         <li class=nav-item>
+            <a class="nav-link text-dark" href=https://hr365docs/My-project/faq>H365-Helpdesk</a>
+        </li>
+        <li class=nav-item>
+            <a class="nav-link text-dark" href=https://hr365docs/My-project/faq>Time Off Manager</a>
+        </li>
+        <li class=nav-item>
+            <a class="nav-link text-dark" href=https://hr365docs/My-project/faq>Timesheet</a>
+        </li>
+        <li class=nav-item>
+        <a class="nav-link text-dark" href=https://hr365docs/My-project/contact>Employee On-boarding</a>
+        </li>
 <a class="nav-link dropdown-toggle text-dark" href=# role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>
 docs
 </a>
@@ -61,14 +73,16 @@ docs
 <div class=row>
 <div class=col-lg-3>
 <div class=sidebar>
-<a class=back-btn href=/hr365docs/My-project.git aria-label=back></a>
+<a class=back-btn href="../../../Employee-Directory/"aria-label=back></a>
 <ul class=list-styled>
 <li data-nav-id=https://github.com/hr365docs/My-project.git/Upgrading/ title=Upgrading class="sidelist
 active">
-<a href=https://github.com/hr365docs/My-project.git/Upgrading/>
+<a href="../Upgrading/">
 Upgrading
 </a>
-<ul>
+
+
+<!-- <ul>
 <li data-nav-id=https://github.com/hr365docs/My-project.git/Upgrading/requirments/ title=Requirments class=sidelist>
 <a href=https://github.com/hr365docs/My-project.git/Upgrading/requirments/>
 Requirments
@@ -92,7 +106,7 @@ Databases
 <li data-nav-id=https://github.com/hr365docs/My-project.git/Upgrading/elements/ title=Elements class=sidelist>
 <a href=https://github.com/hr365docs/My-project.git/Upgrading/elements/>
 Browsers
-</a>
+</a> -->
 </li>
 </ul>
 </li>
@@ -104,7 +118,39 @@ Browsers
 <h2 class=mb-5 id=title>Upgarding</h2>
 <div class="bg-light p-4">
 <ul class=page-list>
-<li data-nav-id=https://github.com/hr365docs/My-project.git/Upgrading/ title=Upgrading class="sidelist
+    <H3>Perform Update</H3>
+    <br>
+    To update the application, you can follow the below steps:
+    <br>
+    <br>
+    <ol>
+        <li>
+            Go to location (i.e., Site collection or subsite) where the old version application which you want to update.</b>
+          <br>
+          <br>
+         <li>Click the right mouse button, click on <b>Details</b>.</li>
+          <br>
+          <div><img src="detail.png" onclick="openModal('detail.png')" alt=""width="100%" height="auto"></div>
+           <br>
+    
+        </li>
+         <li>This displays the <b>details</b> page.</li>
+         <br>
+         <li>Click on <b>ADD IT</b> as shown in below.</li>
+         <br>
+         <div><img src="upgrade.png" onclick="openModal('upgrade.png')" alt=""width="100%" height="auto"></div>
+           <br>
+        
+        <br>
+        <li>Click on <b>Trust it</b> as shown in below.</li>
+        <br>
+            <div><img src="upgrade_trustit.png" onclick="openModal('upgrade_trustit.png')" alt=""width="100%" height="auto"></div>
+        </li>
+       <br>
+       
+
+
+<!-- <li data-nav-id=https://github.com/hr365docs/My-project.git/Upgrading/ title=Upgrading class="sidelist
 active">
 <a href=https://github.com/hr365docs/My-project.git/Upgrading/>
 Upgrading
@@ -133,7 +179,7 @@ Customization
 <li data-nav-id="./Upgrading/elements/ title=Elements class=sidelist">
 <a href="./Upgrading/elements/">
 Elements
-</a>
+</a> -->
 </li>
 </ul>
 </li>
@@ -149,6 +195,16 @@ Elements
 </div>
 </div>
 </section>
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">     
+        <img src="" id="imageId" style="width:100%">
+      </div>
+  
+      </div>
+  </div>
 
 <script src="../../../js/script.min.js"></script>
 </body>
